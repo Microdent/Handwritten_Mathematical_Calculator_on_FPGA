@@ -15,7 +15,7 @@ Just create a Block Design, and complete it as below:
 
 ![bd_0](images/bd_0.jpg)
 
-Then You can click `Validate Design` to check if your design is correct.
+Then you can click `Validate Design` to check if your design is correct.
 
 If your design is correct, you can click `Export Block Design` to get the **tcl** file.
 

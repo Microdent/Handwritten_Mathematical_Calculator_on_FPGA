@@ -7,7 +7,7 @@ First, you need to burn the v2.5 image of PYNQ-Z2 to the SD card. Then use the e
 
 ### 2. Add the files
 
-You need to download all these files and upload them to the `jupyter_notebooks/` folder of PYNQ. Don't forget to add the three files generated in Vivado to the hw_bd folder (or you can just use the three precompiled files which I provided).
+You need to download all these files and upload them to the `jupyter_notebooks/` folder of PYNQ. Don't forget to add the three files generated in Vivado to the `hw_bd/` folder (or you can just use the three precompiled files which I provided).
 
 ### 3. Run from picture in SD card
 

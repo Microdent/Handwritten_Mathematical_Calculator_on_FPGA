@@ -1,30 +1,38 @@
 # Handwritten_Mathematical_Calculator_on_FPGA
-In this project, we mainly implemented a **Handwritten Mathematical Calculator** on the **PYNQ-Z2** FPGA platform. It uses the picture stored in the SD card or the USB camera as input. Then it will detects possible numbers or mathematical operators in the picture, extracts these elements separately, and resizes it to $(32\times32\times1)$. The convolutional neural network will finally output an array of size $(14\times1)$. The meanings of these 14 numbers is shown in Table 1:
+In this project, we mainly implemented a **Handwritten Mathematical Calculator** on the **PYNQ-Z2** FPGA platform. It uses the picture stored in the SD card or the USB camera as input. Then it will detects possible numbers or mathematical operators in the picture, extracts these elements separately, and resizes it to (32x32x1)​. The convolutional neural network will finally output an array of size (14x1). The meanings of these 14 numbers is shown in the below table:
 
-| Number | Meaning  |
-| :----: | :------: |
-|   0    |    0     |
-|   1    |    1     |
-|   2    |    2     |
-|   3    |    3     |
-|   4    |    4     |
-|   5    |    5     |
-|   6    |    6     |
-|   7    |    7     |
-|   8    |    8     |
-|   9    |    9     |
-|   10   |    +     |
-|   11   |    -     |
-|   12   | $\times$ |
-|   13   |  $\div$  |
+| Number | Meaning |
+| :----: | :-----: |
+|   0    |    0    |
+|   1    |    1    |
+|   2    |    2    |
+|   3    |    3    |
+|   4    |    4    |
+|   5    |    5    |
+|   6    |    6    |
+|   7    |    7    |
+|   8    |    8    |
+|   9    |    9    |
+|   10   |    +    |
+|   11   |    -    |
+|   12   |    *    |
+|   13   |    /    |
 
 Subsequently, we will accept the recognition result of the convolutional neural network, and finally calculate the result of the input.
 
 This project is built for 2020 SEU-Xilinx International Summer School.
 
+## Descriptions
+
+This project consists of two parts: **Software_Project** and **Hardware_Project**. 
+
+The **Software_Project** includes the tensorflow model of this network, pre-trained network parameters and data sets. So if you want to understand more about the **network structure**, **re-train your own parameters** or **train this network to detect others**, you should look at the `Software_Project/` folder.
+
+If you only want to **implement this Calculator on your own FPGA Platform**, you just need to look the `Hardware_Project/` and follow my **instructions** below.
+
 ## Quick Instructions
 
-Here is a way to help you quickly implement our project on your own FPGA platform.
+Here is a way to help you quickly implement the project on your own FPGA platform.
 
 ### 0. Prerequisites
 

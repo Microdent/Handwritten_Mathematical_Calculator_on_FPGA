@@ -1,12 +1,8 @@
 import tensorflow as tf
 import os
 import numpy as np
-from collections import namedtuple
 
 SIZE = 32
-
-Conv = namedtuple('Conv', ['kernel', 'channel', 'depth'])
-
 
 def weight_variable(shape):
     """Generates a weight variable of a given shape."""
