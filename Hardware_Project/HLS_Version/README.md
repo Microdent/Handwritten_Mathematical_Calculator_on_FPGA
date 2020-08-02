@@ -7,7 +7,7 @@ First, you have to open the Vivado HLS, create a new project, and select the PYN
 
 ### 2. Add the Source Code
 
-The **cnn.cpp** and **cnn.h** are the source files, the **main.cpp**、`input_images/` and `parameters/` are testbench files. Then you should replace the origin **directives.tcl** with the one I provided.
+The **cnn.cpp** and **cnn.h** are the source files, the **main.cpp**、`input_images/` and `parameters/` are testbench files. ~~Then you should replace the origin **directives.tcl** with the one I provided.~~
 
 ### 3. C Synthesis
 

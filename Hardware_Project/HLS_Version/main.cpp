@@ -57,10 +57,10 @@ void calculator_ps(int* input)
     int* Weight_buf = (int*)calloc(4260640, sizeof(int));
     int* Beta_buf = (int*)calloc(1134, sizeof(int));
 
-    FILE* fp_w = fopen("weight.bin", "rb");
+    FILE* fp_w = fopen("./parameters/weight.bin", "rb");
     if (!fp_w) file_error("weight.bin");
 
-    FILE* fp_b = fopen("bias.bin", "rb");
+    FILE* fp_b = fopen("./parameters/bias.bin", "rb");
     if (!fp_b) file_error("bias.bin");
 
     fread(Weight_buf, sizeof(int), 4260640, fp_w);
@@ -167,15 +167,15 @@ void calculator_ps(int* input)
             printf("FC4\n");
 
             int reorg_out[64][8][8];
-            for(int j=0; j < 100; j++)
-            	printf("%d\n", in_ptr[i][j]);
+            /*for(int j=0; j < 100; j++)
+            	printf("%d\n", in_ptr[i][j]);*/
 
             for (int m = 0; m < 64; m++)
                 for (int r = 0; r < 8; r++)
                     for (int c = 0; c < 8; c++)
                     {
                         reorg_out[m][r][c] = in_ptr[2][m * 64 + r * 8 + c];
-                        printf("%dreo1:%d\n", m * 64 + r * 8 + c, reorg_out[m][r][c]);
+                        //printf("%dreo1:%d\n", m * 64 + r * 8 + c, reorg_out[m][r][c]);
                     }
 
             for (int r = 0; r < 8; r++)
@@ -284,7 +284,7 @@ int main()
 
     int* Input_buf = (int*)calloc(1024, sizeof(int));
 
-    FILE* fp_i = fopen("./output_quan/6/conv_0_0_input.bin", "rb");
+    FILE* fp_i = fopen("./input_imgs/input4_int.bin", "rb");
     if (!fp_i) file_error("input.bin");
 
     fread(Input_buf, sizeof(int), 1024, fp_i);
