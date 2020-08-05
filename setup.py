@@ -40,9 +40,10 @@ copy_notebooks()
 setup(
     name="Handwritten_Mathematical_Calculator_on_FPGA",
     version='1.0',
-    install_requires=[
-        'pynq=2.5',
-    ],
+    # install_requires=[
+    #     'pynq>=2.5',
+    #     'Cython',
+    # ],
     url='https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA',
     license='BSD 3-Clause License',
     author="Quan Deng, Yun Wang, Zhiteng Chao",

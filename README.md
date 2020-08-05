@@ -28,7 +28,13 @@ This project consists of two parts: **Software_Project** and **Hardware_Project*
 
 The **Software_Project** includes the tensorflow model of this network, pre-trained network parameters and data sets. So if you want to understand more about the **network structure**, **re-train your own parameters** or **train this network to detect others**, you should look at the `Software_Project/` folder.
 
-If you only want to **implement this Calculator on your own FPGA Platform**, you just need to look the `Hardware_Project/` and follow my **instructions** below.
+If you only want to **implement this Calculator on your PYNQ-Z2 FPGA Platform**, you just need to connect to the board, open a terminal and type:
+
+```python
+pip3 install git+https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA.git
+```
+
+If you want to rebuild the hardware of this project, you need to look the `Hardware_Project/` fold and follow my **instructions** below.
 
 ## Quick Instructions
 
