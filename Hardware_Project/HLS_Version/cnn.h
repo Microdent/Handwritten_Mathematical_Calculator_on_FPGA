@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <ap_int.h>
 
 //#define STB_IMAGE_IMPLEMENTATION
 //#include "stb_image.h"
@@ -17,6 +18,8 @@
 #define Tc 32
 #define K 5
 #define MAX_BETA_LENGTH 1024
+
+typedef ap_int<8> int8;
 
 typedef struct {
     int w;

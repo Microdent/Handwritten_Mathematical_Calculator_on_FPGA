@@ -17,7 +17,7 @@ Just create a Block Design, and complete it as below:
 
 Then you can click `Validate Design` to check if your design is correct.
 
-If your design is correct, you can click `Export Block Design` to get the **tcl** file.
+~~If your design is correct, you can click `Export Block Design` to get the **tcl** file.~~
 
 ### 4. Generate Bitstream
 

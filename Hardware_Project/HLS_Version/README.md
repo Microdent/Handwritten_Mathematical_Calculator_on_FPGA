@@ -7,7 +7,7 @@ First, you have to open the Vivado HLS, create a new project, and select the PYN
 
 ### 2. Add the Source Code
 
-The **cnn.cpp** and **cnn.h** are the source files, the **main.cpp**、`input_images/` and `parameters/` are testbench files. ~~Then you should replace the origin **directives.tcl** with the one I provided.~~
+The **cnn.cpp** and **cnn.h** are the source files, the **main.cpp**、`input_images/` and `parameters/` are testbench files.
 
 ### 3. C Synthesis
 
@@ -21,4 +21,4 @@ The Synthesis result is below:
 
 Then, you should run `Export RTL` to package this RTL code to IP.
 
-**Note:** The parameters here are **int32**. And due to the time constraints, we did not make further optimization in this version, we may optimize this project in the future.
+**Note:** The parameters here are **int8** & **int32**. And due to the time constraints, we did not make further optimization in this version, we may optimize this project in the future.

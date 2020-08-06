@@ -65,7 +65,7 @@ After performing the operations in HLS and export the IP successfully, you need 
 
 The files needed to run this project on PYNQ-Z2 are placed in the `Hardware_Project/Pynq/` folder.
 
-After completing Block Design in Vivado and successfully generating **bit**、**hwh**、and **tcl** files, rename them to **hmc.xxx** and put them in the `hw_bd/` folder. Finally, just run the **HMC.ipynb** file and enjoy your calculator.
+After completing Block Design in Vivado and successfully generating **bit**、**hwh**~~、and **tcl**~~ files, rename them to **hmc.xxx** and put them in the `hw_bd/` folder. Finally, just run the **HMC.ipynb** file and enjoy your calculator.
 
 ## Demo
 
