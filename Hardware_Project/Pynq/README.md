@@ -15,7 +15,7 @@ Just run the **HMC.ipynb** file, you will get the same result as the demo I prov
 
 ### 4. Run from Webcam (Optional)
 
-If you want to use webcam as the input, you should uncomment the first two sentences in the `image_cut()` function, and rename **cv2_im** to **img** ,then you should comment the fourth sentence.
+If you want to use webcam as the input, you should modify `mdoe = "F"` to `mode = "C"` in the `image_cut()` function~~, and rename **cv2_im** to **img** ,then you should comment the fourth sentence.~~
 
 Finally, just connect your webcam to PYNQ and run this code.
 
