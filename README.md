@@ -33,13 +33,18 @@ If you only want to **implement this Calculator on your PYNQ-Z2 FPGA Platform**,
 ```
 pip3 install git+https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA.git
 ```
+**Note:** If you get the following error after executing the above command:
 
 ```
 error: RPC failed; curl 18 transfer closed with outstanding read data remaining
 fatal: The remote end hung up unexpectedly
 fatal: early EOF
 fatal: index-pack failed
+```
 
+You need to execute the following command first and then execute the previous command
+
+```
 git config --global http.postBuffer 1073742000
 ```
 
