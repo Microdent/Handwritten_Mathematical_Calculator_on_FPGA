@@ -30,11 +30,20 @@ The **Software_Project** includes the tensorflow model of this network, pre-trai
 
 If you only want to **implement this Calculator on your PYNQ-Z2 FPGA Platform**, you just need to connect to the board, open a terminal and type:
 
-```python
+```
 pip3 install git+https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA.git
 ```
 
-If you want to rebuild the hardware of this project, you need to look the `Hardware_Project/` fold and follow my **instructions** below.
+```
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+
+git config --global http.postBuffer 1073742000
+```
+
+If you want to rebuild the hardware of this project, you need to look the `Hardware_Project/` folder and follow my **instructions** below.
 
 ## Quick Instructions
 
