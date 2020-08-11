@@ -22,17 +22,14 @@ Subsequently, we will accept the recognition result of the convolutional neural 
 
 This project is built for 2020 SEU-Xilinx International Summer School.
 
-## Descriptions
-
-This project consists of two parts: **Software_Project** and **Hardware_Project**. 
-
-The **Software_Project** includes the tensorflow model of this network, pre-trained network parameters and data sets. So if you want to understand more about the **network structure**, **re-train your own parameters** or **train this network to detect others**, you should look at the `Software_Project/` folder.
+## Quick Start
 
 If you only want to **implement this Calculator on your PYNQ-Z2 FPGA Platform**, you just need to connect to the board, open a terminal and type:
 
 ```
 pip3 install git+https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA.git
 ```
+
 **Note:** If you get the following error after executing the above command:
 
 ```
@@ -47,6 +44,12 @@ You need to execute the following command first and then execute the previous co
 ```
 git config --global http.postBuffer 1073742000
 ```
+
+## Descriptions
+
+This project consists of two parts: **Software_Project** and **Hardware_Project**. 
+
+The **Software_Project** includes the tensorflow model of this network, pre-trained network parameters and data sets. So if you want to understand more about the **network structure**, **re-train your own parameters** or **train this network to detect others**, you should look at the `Software_Project/` folder.
 
 If you want to rebuild the hardware of this project, you need to look the `Hardware_Project/` folder and follow my **instructions** below.
 
