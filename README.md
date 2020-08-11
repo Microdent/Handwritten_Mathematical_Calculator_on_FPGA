@@ -27,7 +27,7 @@ This project is built for 2020 SEU-Xilinx International Summer School.
 If you only want to **implement this Calculator on your PYNQ-Z2 FPGA Platform**, you just need to connect to the board, open a terminal and type:
 
 ```
-pip3 install git+https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA.git
+sudo pip3 install --upgrade git+https://github.com/Microdent/Handwritten_Mathematical_Calculator_on_FPGA.git
 ```
 
 **Note:** If you get the following error after executing the above command:
@@ -44,6 +44,14 @@ You need to execute the following command first and then execute the previous co
 ```
 git config --global http.postBuffer 1073742000
 ```
+
+Or you can install this offline
+
+```
+sudo pip3 install --upgrade .
+```
+
+
 
 ## Descriptions
 
